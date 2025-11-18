@@ -1,0 +1,45 @@
+# ----------------------------------------
+# 1. Operating System/IDE Files
+# ----------------------------------------
+.ipynb_checkpoints/
+.vscode/
+*~
+
+# ----------------------------------------
+# 2. Environment and Dependency Files
+# ----------------------------------------
+# Virtual environment directory
+venv/
+env/
+/conda/
+__pycache__/
+
+# ----------------------------------------
+# 3. Data, Logs, and Results (Crucial for DL)
+# ----------------------------------------
+# Raw and processed datasets (too large for Git)
+/data/processed/
+
+# Log files, metrics, and tensorboard logs
+/logs/
+/runs/
+/tb_logs/
+
+# Trained models, checkpoints, and weights
+/models/
+/checkpoints/
+*.h5
+*.pth
+*.pt
+*.pkl
+
+# Prediction results and output artifacts
+/results/
+/output/
+
+# ----------------------------------------
+# 4. Compiled/Generated Files
+# ----------------------------------------
+*.pyc
+*.o
+*.so
