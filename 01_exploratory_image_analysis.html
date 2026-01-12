@@ -7556,7 +7556,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">google.colab</span><span class="w"> </span><span class="kn">import</span> <span class="n">drive</span>
@@ -7577,37 +7577,9 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Drive not mounted, so nothing to flush and unmount.
+Mounted at /content/drive/
+/content/drive/My Drive/FHNW/HS_25/DLBS/minichallenge_hs25_object_detection/MC
 </pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipython-input-3327488608.py</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">from</span> google<span class="ansi-blue-fg">.</span>colab <span class="ansi-green-fg">import</span> drive
-<span class="ansi-green-intense-fg ansi-bold">      2</span> drive<span class="ansi-blue-fg">.</span>flush_and_unmount<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>drive<span class="ansi-blue-fg">.</span>mount<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'/content/drive/'</span><span class="ansi-blue-fg">,</span> force_remount<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> 
-<span class="ansi-green-intense-fg ansi-bold">      5</span> get_ipython<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>run_line_magic<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'cd'</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">'/content/drive/My Drive/FHNW/HS_25/DLBS/minichallenge_hs25_object_detection/MC'</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/google/colab/drive.py</span> in <span class="ansi-cyan-fg">mount</span><span class="ansi-blue-fg">(mountpoint, force_remount, timeout_ms, readonly)</span>
-<span class="ansi-green-intense-fg ansi-bold">     95</span> <span class="ansi-green-fg">def</span> mount<span class="ansi-blue-fg">(</span>mountpoint<span class="ansi-blue-fg">,</span> force_remount<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">,</span> timeout_ms<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">120000</span><span class="ansi-blue-fg">,</span> readonly<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     96</span>   <span class="ansi-blue-fg">"""Mount your Google Drive at the specified mountpoint path."""</span>
-<span class="ansi-green-fg">---&gt; 97</span><span class="ansi-red-fg">   return _mount(
-</span><span class="ansi-green-intense-fg ansi-bold">     98</span>       mountpoint<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">     99</span>       force_remount<span class="ansi-blue-fg">=</span>force_remount<span class="ansi-blue-fg">,</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.12/dist-packages/google/colab/drive.py</span> in <span class="ansi-cyan-fg">_mount</span><span class="ansi-blue-fg">(mountpoint, force_remount, timeout_ms, ephemeral, readonly)</span>
-<span class="ansi-green-intense-fg ansi-bold">    270</span>             <span class="ansi-blue-fg">'https://research.google.com/colaboratory/faq.html#drive-timeout'</span>
-<span class="ansi-green-intense-fg ansi-bold">    271</span>         )
-<span class="ansi-green-fg">--&gt; 272</span><span class="ansi-red-fg">       </span><span class="ansi-green-fg">raise</span> ValueError<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'mount failed'</span> <span class="ansi-blue-fg">+</span> extra_reason<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    273</span>     <span class="ansi-green-fg">elif</span> case <span class="ansi-blue-fg">==</span> <span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    274</span>       <span class="ansi-red-fg"># Terminate the DriveFS binary before killing bash.</span>
-
-<span class="ansi-red-fg">ValueError</span>: mount failed</pre>
 </div>
 </div>
 </div>
@@ -7617,7 +7589,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">helpers</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
@@ -8530,7 +8502,7 @@ Lots of background edge details and incomplete edges on illustrated Santas could
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="err">!</span><span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">html</span> <span class="s2">"/content/drive/MyDrive/FHNW/HS_25/DLBS/minichallenge_hs25_object_detection/MC/01_exploratory_image_analysis.ipynb"</span>
@@ -8547,8 +8519,8 @@ Lots of background edge details and incomplete edges on illustrated Santas could
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>[NbConvertApp] Converting notebook /content/drive/MyDrive/FHNW/HS_25/DLBS/minichallenge_hs25_object_detection/MC/01_exploratory_image_analysis.ipynb to html
-[NbConvertApp] WARNING | Alternative text is missing on 7 image(s).
-[NbConvertApp] Writing 5320136 bytes to /content/drive/MyDrive/FHNW/HS_25/DLBS/minichallenge_hs25_object_detection/MC/01_exploratory_image_analysis.html
+[NbConvertApp] WARNING | Alternative text is missing on 6 image(s).
+[NbConvertApp] Writing 3447164 bytes to /content/drive/MyDrive/FHNW/HS_25/DLBS/minichallenge_hs25_object_detection/MC/01_exploratory_image_analysis.html
 </pre>
 </div>
 </div>
