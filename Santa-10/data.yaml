@@ -1,0 +1,12 @@
+names:
+- Santa
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: santa-qqpxm
+  url: https://universe.roboflow.com/dlbs-xi5zk/santa-qqpxm/dataset/10
+  version: 10
+  workspace: dlbs-xi5zk
+test: ../test/images
+train: ../train/images
+val: ../valid/images
